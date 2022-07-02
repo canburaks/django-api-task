@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "abihome"
+version = "0.1.0"
+description = ""
+authors = ["cbs <canburak@msn.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "3.1"
+django-filter = "*"
+django-environ = "*"
+graphene-django = "*"
+uwsgi = "*"
+django-extensions = "^3.1.5"
+ipython = "^8.4.0"
+requests = "^2.28.1"
+
+[tool.poetry.dev-dependencies]
+factory-boy = "*"
+django-stubs = "*"
+autopep8 = "*"
+flake8 = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
