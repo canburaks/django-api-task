@@ -27,9 +27,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', default='django-insecure-abud0&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(strtobool(os.environ.get('DEBUG', default='True')))
+IP = os.environ.get('IP', default='True')
+PORT = os.environ.get('PORT')
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = [f"0.0.0.0:{PORT}", "localhost", "127.0.0.1"]
+print(ALLOWED_HOSTS)
 
 # Application definition
 
